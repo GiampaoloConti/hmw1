@@ -1,0 +1,126 @@
+body{
+    background-color:rgba(46,46,46);
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    min-height: 92vh;
+}
+
+
+#title_favourites_box{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-weight: bold;
+    color: white;
+}
+
+#favourites_box{
+    margin-top: -3%;
+    min-height: 72vh;
+    display: flex;
+    padding: 5%;
+    padding-top: 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.favourite{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid orange;
+    border-radius: 4px;
+    height: 35vh;
+    width: 30vw;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.favourite_img_box{
+    height: 70%;
+}
+
+.not_zoom_favourite{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: top;
+}
+
+.favourite_title{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 3%;
+    padding-bottom: 0;
+    padding-top: 3%;
+    height: 60%;
+    display: flex;
+    overflow: auto;
+}
+
+.favourite_text{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(173, 173, 173);
+    margin-top: -5%;
+    height: 40%;
+    justify-content: space-around;
+}
+
+.favourite_author{
+    padding: 3%;
+    font-style: italic;
+    display: flex;
+    font-size-adjust: auto;
+}
+
+.favourite_button{
+   display: flex;
+   position: absolute;
+   right: 0;
+   width: 50%;
+   font-size: 0.5em;
+   color: white;
+   background-color:rgba(46,46,46);
+   justify-content: center;
+   align-items: center;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+}
+
+.favourite_bottom_box{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    margin: 0;
+    position: relative;
+    margin-bottom: 2%;
+}
+
+@media (max-width: 1100px) {
+
+    #favourites_box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .favourite{
+        width: 100%;
+    }
+
+    .favourite_button{
+        height: 4vh;
+        width: 40%;
+    }
+    
+}
